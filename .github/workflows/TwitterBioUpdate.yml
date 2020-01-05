@@ -29,6 +29,6 @@ jobs:
     - name: Update
       run: |
         echo "${{ secrets.TWURLRC }}" >> ~/.twurlrc
-        export BIO="$(python -m main)"
+        export BIO="'$(python -m main)'"
         twurl -d $BIO /1.1/account/update_profile.json
         
