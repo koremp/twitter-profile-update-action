@@ -1,8 +1,12 @@
 name: TwitterBioUpdate
 
 on:
+  push:
+    branches:
+      - master
   schedule:
     - cron: '*/60 * * * *'
+      
 jobs:
   job:
     runs-on: ubuntu-latest
