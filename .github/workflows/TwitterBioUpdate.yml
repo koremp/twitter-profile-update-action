@@ -31,5 +31,5 @@ jobs:
         echo "${{ secrets.TWURLRC }}" >> ~/.twurlrc
         export BIO="$(python -m main)"
         echo "갱신할 메시지: $BIO"
-        twurl -d "$BIO" /1.1/account/update_profile.json
+        twurl -d "$BIO" "/1.1/account/update_profile.json"
         
