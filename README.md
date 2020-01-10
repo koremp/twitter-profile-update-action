@@ -61,3 +61,9 @@ on:
 │ │ │ │ │
 * * * * *
 ```
+
+## description
+
+`twurl -d description=(원하는 프로필 내용) /1.1/account/update_profile.json`
+
+description을 잊지 맙시다.
