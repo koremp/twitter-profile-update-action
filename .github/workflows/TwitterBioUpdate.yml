@@ -29,7 +29,7 @@ jobs:
     - name: Update
       run: |
         echo "${{ secrets.TWURLRC }}" >> ~/.twurlrc
-        export BIO="description=${{secrets.MSG_1}} $(python -m main) ${{secrets.MSG_2}}"
+        export BIO="description=${{secrets.MSG_1}}$(python -m main)"
         echo "갱신할 메시지: $BIO"
         twurl -d "$BIO" /1.1/account/update_profile.json
         
